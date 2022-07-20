@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@practise/shared-utils": ["packages/shared-utils/index"],
+      "@practise/shared-components": ["packages/shared-components/index"],
+      "@/*": ["packages/project-a/src/*"],
+      "~/*": ["packages/project-b/src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules"]
+}

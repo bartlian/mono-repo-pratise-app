@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "types": ["webpack-env"],
+    "paths": {
+      "@practise/shared-utils": ["packages/shared-utils/index"],
+      "@practise/shared-components": ["packages/shared-components/index"],
+      "@/*": ["packages/project-a/src/*"],
+      "~/*": ["packages/project-b/src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules"]
+}
